@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LEFT COMMAND}
+  - {t: A, h: ⌘}
   - S
   - D
   - F
@@ -22,7 +22,7 @@ layers:
   - K
   - L
   - ;
-  - {t: Z, h: LEFT SHIFT}
+  - {t: Z, h: ⇧}
   - X
   - C
   - V
@@ -34,15 +34,15 @@ layers:
   - ','
   - .
   - /
-  - LCTRL
-  - LEFT ALT
-  - LEFT COMMAND
+  - ⌃
+  - ⌥
+  - ⌘
   - LANGUAGE 2
   - {t: SPACE, h: '2'}
   - {t: '&to_layer_0 LANGUAGE_1', h: '3'}
-  - BACKSPACE
-  - {t: ENTER, h: '1'}
-  - {t: RALT, h: '7'}
+  - ⌫
+  - {t: ↩, h: '1'}
+  - {t: ⌥, h: '7'}
   '1':
   - '1'
   - '2'
@@ -131,9 +131,9 @@ layers:
   - {t: ▽, type: trans}
   '3':
   - ESCAPE
-  - Ctl+Sft+TAB
+  - ⌃+⇧+TAB
   - PRINTSCREEN
-  - Ctl+TAB
+  - ⌃+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
@@ -141,10 +141,10 @@ layers:
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+LEFT ARROW
-  - Gui+RIGHT ARROW
-  - Ctl+Gui+LEFT ARROW
-  - Ctl+Gui+RIGHT ARROW
+  - ⌘+LEFT ARROW
+  - ⌘+RIGHT ARROW
+  - ⌃+⌘+LEFT ARROW
+  - ⌃+⌘+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT ARROW
@@ -152,9 +152,9 @@ layers:
   - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - Gui+Sft+LEFT ARROW
-  - Gui+Sft+RIGHT ARROW
+  - ⇧
+  - ⌘+⇧+LEFT ARROW
+  - ⌘+⇧+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -350,7 +350,7 @@ combos:
 - p: [11, 12]
   k: TAB
 - p: [12, 13]
-  k: Sft+TAB
+  k: ⇧+TAB
 - p: [18, 19]
   k: '"'
 - p: [8, 9]

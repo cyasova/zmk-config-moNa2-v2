@@ -6,21 +6,21 @@ svg path {
 
 /* font and background color specifications */
 svg.keymap {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-family: Aptos,"Segoe UI","Helvetica Neue",Arial,sans-serif;
     font-size: 14px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
-    fill: #24292e;
+    fill: #1f1f24;
 }
 
 /* default key styling */
 rect.key {
-    fill: #f6f8fa;
+    fill: #f5f5f7;
 }
 
 rect.key, rect.combo {
-    stroke: #c9cccf;
-    stroke-width: 1;
+    stroke: #c6c6cc;
+    stroke-width: 1.2;
 }
 
 /* default key side styling, only used is draw_key_sides is set */
@@ -30,12 +30,13 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: #cdf;
+    fill: #e6f1ff;
+    stroke: #7a9cc9;
 }
 
-/* color accent for held keys */
 rect.held, rect.combo.held {
-    fill: #fdd;
+    fill: #fff0de;
+    stroke: #dfad73;
 }
 
 /* color accent for ghost (optional) keys */
@@ -53,7 +54,8 @@ text {
 text.label {
     font-weight: bold;
     text-anchor: start;
-    stroke: white;
+    fill: #6e6e73;
+    stroke: #ffffff;
     stroke-width: 4;
     paint-order: stroke;
 }
@@ -62,7 +64,8 @@ text.label {
 text.footer {
     text-anchor: end;
     dominant-baseline: auto;
-    stroke: white;
+    fill: #6e6e73;
+    stroke: #ffffff;
     stroke-width: 4;
     paint-order: stroke;
 }
@@ -101,14 +104,36 @@ text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
 
 /* lighter symbol for transparent keys */
 text.trans {
-    fill: #7b7e81;
+    fill: #8e8e93;
 }
 
 /* styling for combo dendrons */
 path.combo {
     stroke-width: 1;
-    stroke: gray;
+    stroke: #8f97a3;
     fill: none;
+}
+
+.keypos-37 rect.key:not(.held):not(.ghost),
+.keypos-38 rect.key:not(.held):not(.ghost),
+.keypos-39 rect.key:not(.held):not(.ghost),
+.keypos-40 rect.key:not(.held):not(.ghost),
+.keypos-41 rect.key:not(.held):not(.ghost),
+.keypos-42 rect.key:not(.held):not(.ghost),
+.keypos-43 rect.key:not(.held):not(.ghost),
+.keypos-44 rect.key:not(.held):not(.ghost),
+.keypos-45 rect.key:not(.held):not(.ghost) {
+    fill: #e9e9ee;
+    stroke: #b0b0b8;
+}
+
+.keypos-36 rect.key:not(.held):not(.ghost),
+.keypos-37 rect.key:not(.held):not(.ghost),
+.keypos-38 rect.key:not(.held):not(.ghost),
+.keypos-39 rect.key:not(.held):not(.ghost),
+.keypos-40 rect.key:not(.held):not(.ghost) {
+    fill: #ddeeff;
+    stroke: #86a9d6;
 }
 
 /* Start Tabler Icons Cleanup */
@@ -123,6 +148,54 @@ path.combo {
     visibility: hidden;
 }
 /* End Tabler Icons Cleanup */
+
+@media (prefers-color-scheme: dark) {
+svg.keymap {
+    fill: #f5f5f7;
+}
+rect.key {
+    fill: #2c2c2e;
+    stroke: #5a5a60;
+}
+rect.combo, rect.combo-separate {
+    fill: #24364c;
+    stroke: #6f95c8;
+}
+rect.held, rect.combo.held {
+    fill: #7a5736;
+    stroke: #f0b779;
+}
+text.label, text.footer {
+    fill: #f5f5f7;
+    stroke: #121214;
+}
+text.trans {
+    fill: #8e8e93;
+}
+path.combo {
+    stroke: #798391;
+}
+.keypos-37 rect.key:not(.held):not(.ghost),
+.keypos-38 rect.key:not(.held):not(.ghost),
+.keypos-39 rect.key:not(.held):not(.ghost),
+.keypos-40 rect.key:not(.held):not(.ghost),
+.keypos-41 rect.key:not(.held):not(.ghost),
+.keypos-42 rect.key:not(.held):not(.ghost),
+.keypos-43 rect.key:not(.held):not(.ghost),
+.keypos-44 rect.key:not(.held):not(.ghost),
+.keypos-45 rect.key:not(.held):not(.ghost) {
+    fill: #3a3a3f;
+    stroke: #7a7a82;
+}
+.keypos-36 rect.key:not(.held):not(.ghost),
+.keypos-37 rect.key:not(.held):not(.ghost),
+.keypos-38 rect.key:not(.held):not(.ghost),
+.keypos-39 rect.key:not(.held):not(.ghost),
+.keypos-40 rect.key:not(.held):not(.ghost) {
+    fill: #2b3f57;
+    stroke: #7fa1ce;
+}
+}
 </style>
 <g transform="translate(30, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
