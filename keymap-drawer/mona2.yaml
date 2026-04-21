@@ -16,24 +16,24 @@ layers:
   - D
   - F
   - G
-  - '-'
+  - MINUS
   - H
   - J
   - K
   - L
-  - ;
+  - SEMICOLON
   - {t: Z, h: ⇧}
   - X
   - C
   - V
   - B
-  - '['
-  - ']'
+  - LEFT BRACKET
+  - RIGHT BRACKET
   - N
   - M
-  - ','
-  - .
-  - /
+  - COMMA
+  - DOT
+  - SLASH
   - ⌃
   - ⌥
   - ⌘
@@ -55,28 +55,28 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - (
-  - )
+  - LEFT BRACKET
+  - RIGHT BRACKET
+  - LEFT PARENTHESIS
+  - RIGHT PARENTHESIS
   - {t: ▽, type: trans}
   - '&mkp MB3'
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: ▽, type: trans}
-  - \
+  - BACKSLASH
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - (
-  - )
+  - LEFT PARENTHESIS
+  - RIGHT PARENTHESIS
   - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '|'
+  - PIPE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,27 +87,27 @@ layers:
   - {t: PAGE DOWN, type: held}
   - {t: ▽, type: trans}
   '2':
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - '-'
-  - _
-  - '`'
-  - '~'
-  - '"'
-  - ''''
-  - _
+  - EXCLAMATION
+  - AT SIGN
+  - POUND
+  - DOLLAR
+  - PERCENT
+  - CARET
+  - AMPERSAND
+  - ASTERISK
+  - MINUS
+  - UNDERSCORE
+  - GRAVE
+  - TILDE
+  - DOUBLE QUOTES
+  - SQT
+  - UNDERSCORE
   - {t: ▽, type: trans}
   - '&mkp MB3'
   - '&mkp MB1'
   - '&mkp MB2'
-  - '='
-  - +
+  - EQUAL
+  - PLUS
   - F1
   - F2
   - F3
@@ -352,10 +352,10 @@ combos:
 - p: [12, 13]
   k: ⇧+TAB
 - p: [18, 19]
-  k: '"'
+  k: DOUBLE QUOTES
 - p: [8, 9]
-  k: '='
+  k: EQUAL
 - p: [19, 20]
-  k: ''''
+  k: SINGLE QUOTE
 - p: [7, 8]
-  k: '-'
+  k: MINUS
