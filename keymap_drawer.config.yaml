@@ -16,11 +16,49 @@ parse_config:
     LEFT_SHIFT: ⇧
     ENTER: ↩
     BACKSPACE: ⌫
+    ESCAPE: Esc
+    DELETE: Del
+    PRINTSCREEN: PrtSc
+    LANGUAGE_1: Lang1
+    LANGUAGE_2: Lang2
+    PAGE_UP: PgUp
+    PAGE_DOWN: PgDn
+    UP_ARROW: ↑
+    DOWN_ARROW: ↓
+    LEFT_ARROW: ←
+    RIGHT_ARROW: →
+    SEMICOLON: ;
+    COMMA: ","
+    DOT: .
+    SLASH: /
+    MINUS: "-"
+    EQUAL: "="
+    LEFT_BRACKET: "["
+    RIGHT_BRACKET: "]"
+    LEFT_PARENTHESIS: "("
+    RIGHT_PARENTHESIS: ")"
+    DOUBLE_QUOTES: '"'
+    SQT: "'"
+    BACKSLASH: "\\"
+    PIPE: "|"
+    UNDERSCORE: _
+    EXCLAMATION: "!"
+    AT_SIGN: "@"
+    POUND: "#"
+    DOLLAR: $
+    PERCENT: "%"
+    CARET: "^"
+    AMPERSAND: "&"
+    ASTERISK: "*"
+    GRAVE: "`"
+    TILDE: "~"
+    PLUS: +
 
 draw_config:
   key_rx: 8
   key_ry: 8
   dark_mode: false
+  shrink_wide_legends: 6
   svg_extra_style: |
     svg.keymap {
       font-family: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;

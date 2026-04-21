@@ -16,30 +16,30 @@ layers:
   - D
   - F
   - G
-  - MINUS
+  - '-'
   - H
   - J
   - K
   - L
-  - SEMICOLON
+  - ;
   - {t: Z, h: ⇧}
   - X
   - C
   - V
   - B
-  - LEFT BRACKET
-  - RIGHT BRACKET
+  - '['
+  - ']'
   - N
   - M
-  - COMMA
-  - DOT
-  - SLASH
+  - ','
+  - .
+  - /
   - ⌃
   - ⌥
   - ⌘
-  - LANGUAGE 2
+  - Lang2
   - {t: SPACE, h: '2'}
-  - {t: '&to_layer_0 LANGUAGE_1', h: '3'}
+  - {t: Lang1, h: '3'}
   - ⌫
   - {t: ↩, h: '1'}
   - {t: ⌥, h: '7'}
@@ -55,28 +55,28 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - LEFT BRACKET
-  - RIGHT BRACKET
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
+  - '['
+  - ']'
+  - (
+  - )
   - {t: ▽, type: trans}
   - '&mkp MB3'
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: ▽, type: trans}
-  - BACKSLASH
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
-  - PAGE UP
+  - (
+  - )
+  - PgUp
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PIPE
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -84,30 +84,30 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: PAGE DOWN, type: held}
+  - {t: PgDn, type: held}
   - {t: ▽, type: trans}
   '2':
-  - EXCLAMATION
-  - AT SIGN
-  - POUND
-  - DOLLAR
-  - PERCENT
-  - CARET
-  - AMPERSAND
-  - ASTERISK
-  - MINUS
-  - UNDERSCORE
-  - GRAVE
-  - TILDE
-  - DOUBLE QUOTES
-  - SQT
-  - UNDERSCORE
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - '-'
+  - _
+  - '`'
+  - '~'
+  - '"'
+  - "'"
+  - _
   - {t: ▽, type: trans}
   - '&mkp MB3'
   - '&mkp MB1'
   - '&mkp MB2'
-  - EQUAL
-  - PLUS
+  - =
+  - +
   - F1
   - F2
   - F3
@@ -130,38 +130,38 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
-  - ESCAPE
+  - Esc
   - ⌃+⇧+TAB
-  - PRINTSCREEN
+  - PrtSc
   - ⌃+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - UP ARROW
+  - ↑
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ⌘+LEFT ARROW
-  - ⌘+RIGHT ARROW
-  - ⌃+⌘+LEFT ARROW
-  - ⌃+⌘+RIGHT ARROW
+  - ⌘+←
+  - ⌘+→
+  - ⌃+⌘+←
+  - ⌃+⌘+→
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - ←
+  - ↓
+  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ⇧
-  - ⌘+⇧+LEFT ARROW
-  - ⌘+⇧+RIGHT ARROW
+  - ⌘+⇧+←
+  - ⌘+⇧+→
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DELETE
-  - PAGE UP
-  - PAGE DOWN
+  - Del
+  - PgUp
+  - PgDn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -321,7 +321,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP ARROW
+  - ↑
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -332,9 +332,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - ←
+  - ↓
+  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -352,10 +352,10 @@ combos:
 - p: [12, 13]
   k: ⇧+TAB
 - p: [18, 19]
-  k: DOUBLE QUOTES
+  k: '"'
 - p: [8, 9]
-  k: EQUAL
+  k: =
 - p: [19, 20]
-  k: SINGLE QUOTE
+  k: "'"
 - p: [7, 8]
-  k: MINUS
+  k: '-'
