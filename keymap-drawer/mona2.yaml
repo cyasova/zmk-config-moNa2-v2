@@ -11,12 +11,12 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: LEFT COMMAND}
   - S
   - D
   - F
   - G
-  - F13
+  - '-'
   - H
   - J
   - K
@@ -27,22 +27,22 @@ layers:
   - C
   - V
   - B
-  - F14
-  - F15
+  - '['
+  - ']'
   - N
   - M
   - ','
   - .
   - /
   - LCTRL
-  - LEFT WIN
-  - F16
-  - BACKSPACE
-  - {t: ENTER, h: '2'}
-  - {t: '&to_layer_0 LANG2', h: '3'}
-  - {t: '&to_layer_0 LANG1', h: '3'}
-  - {t: SPACE, h: '1'}
   - LEFT ALT
+  - LEFT COMMAND
+  - LANGUAGE 2
+  - {t: SPACE, h: '2'}
+  - {t: '&to_layer_0 LANGUAGE_1', h: '3'}
+  - BACKSPACE
+  - {t: ENTER, h: '1'}
+  - {t: RALT, h: '7'}
   '1':
   - '1'
   - '2'
@@ -55,14 +55,14 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '['
   - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - (
   - )
+  - {t: ▽, type: trans}
+  - '&mkp MB3'
+  - '&mkp MB1'
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - \
   - {t: ▽, type: trans}
@@ -70,9 +70,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
+  - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: PAGE DOWN, type: held}
   - {t: ▽, type: trans}
   '2':
   - '!'
@@ -101,7 +101,7 @@ layers:
   - '~'
   - '"'
   - ''''
-  - {t: ▽, type: trans}
+  - _
   - {t: ▽, type: trans}
   - '&mkp MB3'
   - '&mkp MB1'
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
-  - {t: ▽, type: trans}
+  - ESCAPE
   - Ctl+Sft+TAB
   - PRINTSCREEN
   - Ctl+TAB
@@ -301,8 +301,61 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  '7':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [39, 38]
   k: {t: ESC, h: '4'}
 - p: [11, 12]
   k: TAB
+- p: [12, 13]
+  k: Sft+TAB
+- p: [18, 19]
+  k: '"'
+- p: [8, 9]
+  k: '='
+- p: [19, 20]
+  k: ''''
+- p: [7, 8]
+  k: '-'
