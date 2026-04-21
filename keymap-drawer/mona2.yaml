@@ -39,7 +39,7 @@ layers:
   - ⌘
   - Lang2
   - {t: SPACE, h: '2'}
-  - {t: '&to_layer_0 LANGUAGE_1', h: '3'}
+  - {t: Lang1, h: '3'}
   - ⌫
   - {t: ↩, h: '1'}
   - {t: ⌥, h: '7'}
@@ -356,6 +356,6 @@ combos:
 - p: [8, 9]
   k: '='
 - p: [19, 20]
-  k: SINGLE QUOTE
+  k: "'"
 - p: [7, 8]
   k: '-'

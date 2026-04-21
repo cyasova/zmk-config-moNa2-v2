@@ -1,4 +1,7 @@
 parse_config:
+  raw_binding_map:
+    "&to_layer_0 LANGUAGE_1": Lang1
+    "&kp SINGLE_QUOTE": "'"
   modifier_fn_map:
     left_ctrl: ⌃
     right_ctrl: ⌃
