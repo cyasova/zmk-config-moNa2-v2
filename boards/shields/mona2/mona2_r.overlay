@@ -50,12 +50,12 @@
         status = "okay";
         compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
         reg = <0>;
-        spi-max-frequency = <2000000>;
+        spi-max-frequency = <2000000>; // 上げると通信応答は速くなるが、配線品質が低いと不安定化する可能性あり
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
-        cpi = <600>;
-        //swap-xy;
-        invert-x; //COROPIT版ではコメントアウトを外す
-        invert-y; //COROPIT版ではコメントアウトを外す
+        cpi = <600>; // 値を上げる: カーソルが速くなる / 値を下げる: カーソルが遅くなり微調整しやすい
+        //swap-xy; // 有効化するとX/Y軸が入れ替わる（物理向きが90度ずれている場合の補正用）
+        invert-x; // 有効化で左右反転（右へ転がして左へ動く場合に使う）。COROPIT版では有効化推奨
+        invert-y; // 有効化で上下反転（上へ転がして下へ動く場合に使う）。COROPIT版では有効化推奨
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -69,13 +69,13 @@
     device = <&trackball_central>;
 
     scroller {
-        layers = <3>;
+        layers = <3>; // スクロール変換を有効化するレイヤー番号。例: <3 6> にすると layer 3 と 6 で有効
         input-processors = 
-            // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
-            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-            <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
-            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-            <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
+            // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        // 有効化で「縦を回すと横スクロール」になる（X/Y入れ替え）
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       // スクロール変換前のX反転（左右の向き調整）
+            <&zip_xy_to_scroll_mapper>,                         // トラックボールのXY移動をスクロールイベントへ変換
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   // スクロール変換後のX反転（最終的な横スクロール向き調整）
+            <&zip_scroll_scaler 1 5>;                           // 分子/分母でスクロール量を調整。1/5は控えめ、1/3で速く、1/8で遅くなる
     };
 
 };
